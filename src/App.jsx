@@ -1,9 +1,26 @@
+import TaskCard from "./components/TaskCard"
+
 function App() {
-  return(
-    <div>
-      <h1>Welcome to My To-Do App.</h1>
-    </div>
-  );
+  return (
+    <>
+      <h1>My Tasks</h1>
+
+      <TaskCard
+        title="Finish Assignment"
+        dueDate="March 12"
+      />
+
+      <TaskCard
+        title="Study Props"
+        dueDate="March 15"
+      />
+
+      <TaskCard
+        title="Submit Project"
+        dueDate="March 20"
+      />
+    </>
+  )
 }
 
 export default App
